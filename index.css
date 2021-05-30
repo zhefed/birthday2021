@@ -1,0 +1,35 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5vh;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .content {
+    max-width: 80%;
+}
+
+section .content h1 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 3em;
+    transition: 1s;
+    transform-origin: left;
+    transform: scale(1);
+}
+
+a {
+    text-decoration: none;
+    color: #cc8c4a;
+}
