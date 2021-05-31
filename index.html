@@ -29,8 +29,12 @@
 </section>
 <script src="./confetti.js"></script>
 <script>
-    document.getElementById('name').innerText = decodeURIComponent(escape(window.atob(window.location.search.slice(1))));
-    
+    if (window.location.search) {
+        document.getElementById('name').innerText = ', ' + decodeURIComponent(escape(window.atob(window.location.search.slice(1))));
+    }
+    else {
+        console.log('no name')
+    }
     const start = () => {
         setTimeout(function() {
             confetti.start()
