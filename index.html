@@ -18,7 +18,7 @@
 <section>
     <div class="content">
         <h1>Мой день рождения 2021</h1>
-        <h2>Привет <span id="name">name</span> !</h2>
+        <h2>Привет <span id="name">name</span>!</h2>
         <h3>
             Как ты уже понял, я приглашаю тебя на мой день рождения!<br>
             В этом году у нас будет боулинг!<br>
@@ -29,7 +29,7 @@
 </section>
 <script src="./confetti.js"></script>
 <script>
-    document.getElementById('name').innerText = decodeURIComponent(escape(window.atob(window.location.search.slice(1))));
+    document.getElementById('name').innerText = ' ' + decodeURIComponent(escape(window.atob(window.location.search.slice(1))));
     
     const start = () => {
         setTimeout(function() {
