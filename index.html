@@ -29,7 +29,7 @@
 </section>
 <script src="./confetti.js"></script>
 <script>
-    document.getElementById('name').innerText = window.atob(window.location.search.slice(1))
+    document.getElementById('name').innerText = decodeURIComponent(escape(window.atob(window.location.search.slice(1))));
     
     const start = () => {
         setTimeout(function() {
